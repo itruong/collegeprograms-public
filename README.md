@@ -11,7 +11,8 @@ The frontend was implemented in React/Redux and the Material UI component librar
 ## Setup and Installation
 
 To run backend services with Docker Compose:
-- ensure that a MONGO_CONNECTION connection string is specified in ```.env``` file and setup a firebase service account key in the auth service.
+- ensure that a MONGO_CONNECTION connection string is specified in ```.env``` file and setup a firebase service account key in the auth service
+- run ```docker-compose -f elasticsearch-local.yml up --build``` in the collegeprograms-backend directory to bring up a local elasticsearch instance
 - run ```docker-compose up --build``` in the collegeprograms-backend directory to bring up the backend services
 
 To run the frontend:
