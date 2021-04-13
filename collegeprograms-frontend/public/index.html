@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <!-- <link rel="apple-touch-icon" href="logo192.png" /> -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#reserved-urls -->
+    <!-- FirebaseUI -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/4.2.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.2.0/firebaseui.css" />
+    
+    <title>College Programs</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!--
+      <script src="/__/firebase/6.6.1/firebase-app.js"></script>
+      <script src="/__/firebase/6.6.1/firebase-auth.js"></script>
+      <script src="/__/firebase/init.js"></script>
+    -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCBYynTL6bR_7IYPkdgQWXUjk-dy99p-T4",
+        authDomain: "connectapp-4a09a.firebaseapp.com",
+        databaseURL: "https://connectapp-4a09a.firebaseio.com",
+        projectId: "connectapp-4a09a",
+        storageBucket: "connectapp-4a09a.appspot.com",
+        messagingSenderId: "97256735080",
+        appId: "1:97256735080:web:64ee8b35a17393d7"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      var authUi = new firebaseui.auth.AuthUI(firebase.auth());
+
+    </script>
+
+    <div id="root"></div>
+  </body>
+</html>

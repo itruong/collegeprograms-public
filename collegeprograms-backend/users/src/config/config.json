@@ -1,0 +1,9 @@
+{
+    "localhost": {
+        "config_id": "localhost",
+        "app_name": "users",
+        "app_desc": "collegeprograms users service",
+        "node_port": 8003,
+        "endpoint": "http://localhost:8003"
+    }
+}

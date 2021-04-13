@@ -1,0 +1,23 @@
+{
+    "localhost": {
+        "configId": "localhost",
+        "appName": "auth",
+        "appDesc": "collegeprograms authentication",
+        "nodePort": 8002,
+        "endpoint": "http://localhost:8002",
+        "origins": {
+            "external": [
+                "http://localhost:3000"
+            ],
+            "internal": [
+                "http://localhost:5001",
+                "http://localhost:5002"
+            ]
+        },
+        "databases": {
+            "firebaseAuth": {
+                "url": "https://connectapp-4a09a.firebaseio.com"
+            }
+        }
+    }
+}

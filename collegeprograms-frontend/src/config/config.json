@@ -1,0 +1,9 @@
+{
+    "localhost": {
+        "config_id": "localhost",
+        "app_name": "collegeprograms frontend",
+        "app_desc": "collegeprograms frontend",
+        "node_port": 3000,
+        "SERVER_BASE_URL": "http://localhost:8000"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "localhost": {
+        "config_id": "localhost",
+        "app_name": "programs",
+        "app_desc": "collegeprograms programs service",
+        "node_port": 8001,
+        "es_url": "http://elasticsearch:9200", 
+        "endpoint": "http://localhost:8001",
+        "routing": {
+            "gateway": "http://gateway:8000"
+        }
+    }
+}

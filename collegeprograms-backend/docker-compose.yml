@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  auth:
+    build: ./auth
+    volumes:
+      - './auth:/usr/src/app'
+      - '/usr/src/app/node_modules'
+  gateway:
+    build: ./gateway
+    volumes:
+      - './gateway:/usr/src/app'
+      - '/usr/src/app/node_modules'
+  programs:
+    build: ./programs
+    volumes:
+      - './programs:/usr/src/app'
+      - '/usr/src/app/node_modules'
+  proxy:
+    build: ./proxy
+    ports:
+      - "8000:80"
+  users:
+    build: ./users
+    volumes:
+      - './users:/usr/src/app'
+      - '/usr/src/app/node_modules'
+  

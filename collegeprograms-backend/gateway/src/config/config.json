@@ -1,0 +1,30 @@
+{
+    "localhost": {
+        "config_id": "localhost",
+        "app_name": "gateway",
+        "app_desc": "collegeprograms api gateway",
+        "node_port": 8000,
+        "endpoint": "http://localhost:8000",
+        "origins": {
+            "external": [
+                "http://localhost:3000"
+            ],
+            "internal": [
+                "http://auth:8002",
+                "http://programs:8001",
+                "http://users:8003"
+            ]
+        },
+        "databases": {
+            "dynamodb": {
+                "region": "us-east-2",
+                "endpoint": "http://localhost:6000"
+            }
+        },
+        "routing": {
+            "auth": "http://auth:8002",
+            "programs": "http://programs:8001",
+            "users": "http://users:8003"
+        }
+    }
+}
